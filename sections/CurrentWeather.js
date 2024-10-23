@@ -6,7 +6,6 @@ function displayCurrentWeather(city) {
   fetch(currentWeatherEndpoint)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       // Extragem proprietatile care ne intereseaza.
       const { name, dt, main, weather, wind } = data;
       // getDayOfTheWeek si getHour sunt creata de noi, in utils/date.

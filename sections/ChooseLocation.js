@@ -6,9 +6,10 @@ const sibiuButton = document.querySelector('.sibiu');
 const currentLocation = document.querySelector('.current-location');
 
 function handleLocationChange(city) {
+  localStorage.setItem('city', city);
   currentLocation.innerHTML = city;
   displayCurrentWeather(city);
-  localStorage.setItem('city', city);
+  displayForecast(city);
 }
 
 oradeaButton.addEventListener('click', function () {

@@ -6,3 +6,4 @@ if (cityLocalStorage === null) {
 
 currentLocation.innerHTML = cityLocalStorage;
 displayCurrentWeather(cityLocalStorage);
+displayForecast(cityLocalStorage);
